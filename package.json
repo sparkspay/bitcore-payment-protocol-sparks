@@ -1,0 +1,43 @@
+{
+  "name": "bitcore-payment-protocol-sparks",
+  "version": "1.2.1",
+  "description": "Payment Protocol (BIP70 and related) support for bitcore-sparks",
+  "author": "BitPay <dev@bitpay.com>",
+  "main": "index.js",
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coverage": "gulp coverage",
+    "build": "gulp",
+    "rootcerts": "node ./update-rootcerts.js"
+  },
+  "contributors": [
+    {
+      "name": "z3r0 m0r4k",
+      "email": "m0r4k@outlook.com"
+    }
+  ],
+  "keywords": [
+    "sparks",
+    "bitcore-sparks"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sparkspay/bitcore-payment-protocol-sparks.git"
+  },
+  "browser": "lib/browser.js",
+  "dependencies": {
+    "asn1.js": "=4.5.2",
+    "bitcore-lib-sparks": "git+https://github.com/sparkspay/bitcore-lib-sparks.git#master",
+    "jsrsasign": "=5.0.10",
+    "protobufjs": "=5.0.3"
+  },
+  "devDependencies": {
+    "bitcore-build-sparks": "git+https://github.com/sparkspay/bitcore-build-sparks.git#master",
+    "brfs": "^1.2.0",
+    "chai": "~1.10.0",
+    "gulp": "^3.8.10",
+    "sinon": "^1.17.3"
+  },
+  "license": "MIT"
+}
